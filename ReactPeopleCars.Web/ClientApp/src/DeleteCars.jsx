@@ -23,12 +23,16 @@ class DeleteCars extends React.Component {
 
     render() {
         return (
-
-
             <div>
 
-
-
+                <div className="row">
+                    <div class="col-md-10">
+                        <input type="text" className="form-control form-control-lg" placeholder="Search Cars" value={""} />
+                    </div>
+                    <div className="col-md-2"><button className="btn btn-dark btn-lg w-100">Clear</button>
+                    </div>
+                </div>
+                <br></br>
                 <table className="table table-hover table-striped table-bordered">
                     <thead>
                         <tr>
@@ -58,7 +62,7 @@ class DeleteCars extends React.Component {
                         </Link>
                     </div>
                     <div className="col-md-6" style={{ margintop: "20px" }}>
-                            <button onClick={this.onDeleteClick} className="btn btn-danger btn-lg w-100">Yes</button>
+                        <button onClick={this.onDeleteClick} className="btn btn-danger btn-lg w-100">Yes</button>
                     </div>
 
                 </div>

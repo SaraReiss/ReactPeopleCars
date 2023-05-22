@@ -33,11 +33,16 @@ class HomePage extends React.Component {
         await this.refreshPeople();
     }
 
-       render() {
+    render() {
         return (
-
-
-          <div>
+            <div>
+                <div className="row">
+                    <div className="col-md-10">
+                        <input type="text" className="form-control form-control-lg" placeholder="Search People" value={""}/>
+                    </div>
+                    <div className="col-md-2"><button className="btn btn-dark btn-lg w-100">Clear</button>
+                    </div>
+                </div>
 
                 <div className="row mt-5">
                     <div className="col-md-12" style={{ marginBottom: "20px" }}>
@@ -64,7 +69,7 @@ class HomePage extends React.Component {
                             <PersonRow
                                 key={p.id}
                                 person={p}
-                           
+
                             />)}
                     </tbody>
                 </table>
