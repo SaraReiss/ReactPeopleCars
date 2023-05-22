@@ -1,8 +1,5 @@
 import React from 'react';
-import PersonRow from './PersonRow';
-import AddPerson from './AddPerson';
 import axios from 'axios';
-import { produce } from 'immer';
 import { Link } from 'react-router-dom';
 
 class DeleteCars extends React.Component {
