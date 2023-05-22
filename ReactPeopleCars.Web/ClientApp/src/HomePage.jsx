@@ -9,20 +9,6 @@ import { Link } from 'react-router-dom';
 class HomePage extends React.Component {
     state = {
         people: [],
-        person: {
-            firstName: '',
-            lastName: '',
-            age: ''
-        },
-        cars: [],
-        Car: {
-            make: '',
-            model: '',
-            year: ''
-        },
-
-
-
     }
 
     componentDidMount = async () => {
@@ -45,20 +31,6 @@ class HomePage extends React.Component {
     onAddPersonClick = async () => {
         await axios.post('/api/people/addPerson', this.state.person);
         await this.refreshPeople();
-        this.resetToAddMode();
-    }
-
-
-    resetToAddMode = () => {
-        this.setState({
-
-            person: {
-                firstName: '',
-                lastName: '',
-                age: ''
-            },
-
-        })
     }
 
        render() {
