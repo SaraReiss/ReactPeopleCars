@@ -50,8 +50,6 @@ namespace ReactPeopleCars.Web.Controllers
             var repo = new PersonCarsRepository(_connectionString);
             repo.DeleteCarsForPersonId(id);
         }
-
-
         [HttpGet]
         [Route("getbyid")]
         public Person GetById(int id)

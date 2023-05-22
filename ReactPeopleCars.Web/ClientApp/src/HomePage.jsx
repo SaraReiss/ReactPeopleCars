@@ -61,26 +61,7 @@ class HomePage extends React.Component {
         })
     }
 
-    onCancelClick = () => {
-        this.resetToAddMode();
-    }
-
-    onDeleteClick = async id => {
-        await axios.post('/api/people/delete', { id });
-        this.refreshPeople();
-
-    }
-
-
-
-    onDeleteAllClick = async () => {
-        await axios.post('/api/people/deletemany', { ids: this.state.peopleToDelete });
-        await this.refreshPeople();
-    }
-
-
-
-    render() {
+       render() {
         return (
 
 
