@@ -111,9 +111,7 @@ class HomePage extends React.Component {
                             <PersonRow
                                 key={p.id}
                                 person={p}
-                            //onDeleteClick={() => this.onDeleteClick(p.id)}
-                            //isSetToDelete={this.state.peopleToDelete.includes(p.id)}
-                            //onSetToDeleteChange={() => this.onSetToDeleteChange(p.id)}
+                           
                             />)}
                     </tbody>
                 </table>
